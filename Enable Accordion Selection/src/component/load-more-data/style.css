@@ -1,0 +1,77 @@
+.container {
+  width: 100vw;              /* full screen width */
+  min-height: 100vh;         /* full screen height */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;    /* include padding in width */
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9; /* optional light background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Product grid — exactly 4 per row */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-height: 500px;   /* Fixed height */
+  overflow-y: scroll;  /* Enable scroll only inside product grid */
+  padding-right: 10px; /* for scrollbar space */
+}
+
+
+/* Product card style */
+.product {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Product name */
+.product p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+/* Load More button */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}

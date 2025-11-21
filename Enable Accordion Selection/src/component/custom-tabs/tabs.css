@@ -1,0 +1,44 @@
+/* Outer wrapper */
+.wrapper {
+  width: 600px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Tab header container */
+.heading {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Single Tab */
+.tab-item {
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.tab-item:hover {
+  background: #0a5a94;
+}
+
+/* Active Tab */
+.tab-item.active {
+  border-bottom: 3px solid royalblue;
+  font-weight: 600;
+  color: royalblue;
+  background: #eef3ff;
+}
+
+/* Tab label text */
+.label {
+  font-size: 17px;
+}
+
+/* Content area */
+.content {
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
