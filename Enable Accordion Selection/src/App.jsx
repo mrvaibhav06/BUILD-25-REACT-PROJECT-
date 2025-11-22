@@ -9,6 +9,7 @@ import LightDarkMode from "./light-dark-mode";
 import ScrollIndicator from "./component/scroll-indicator";
 import TabsTest from "./component/custom-tabs/tabs-test";
 import PopupTest from "./component/custom-model-popup/popup-test";
+import GithubProfileFinder from "./component/github-profile-finder";
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
       {/* <TabsTest/> */}
 
       {/* Custom model popup */}
-      <PopupTest/>
+      {/* <PopupTest/> */}
+
+      {/* Search github profile  */}
+      <GithubProfileFinder/>
     </div>
   );
 }
